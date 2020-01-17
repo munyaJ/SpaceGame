@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title> Earth </title>
+
+        <style>
+            body, html {
+            height: 100%;
+            margin: 0;
+            }
+
+            .bg {
+            background-image: url("cosmic.jpg");
+
+            height: 100%; 
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+            img
+            {position:absolute;
+            top: 100px;
+            left: 240px;}
+
+        </style>
+
+    </head>
+    
+    <body>
+        <div class="bg"></div>
+        <img id="earth" src="Earth.png"/ alt="image" height="150" width="150">
+
+    </body>
+
+    <script>
+        var x = 100;
+        var y = 240;
+        var EarthSpeed = 10;
+        //document.getElementById("earth").style.top = x + "px";
+         document.onkeypress = function (e)
+        {
+        e = e || window.event;
+        // use e.keyCode
+        //alert(e.keyCode);  
+
+        console.log(e.keyCode);
+
+        if (e.keyCode==119){x = x - EarthSpeed; document.getElementById("earth").style.top  = x + "px";}
+        if (e.keyCode==115){x = x + EarthSpeed; document.getElementById("earth").style.top  = x + "px";}
+        if (e.keyCode==100){y = y + EarthSpeed; document.getElementById("earth").style.left = y + "px";}
+        if (e.keyCode==97) {y = y - EarthSpeed; document.getElementById("earth").style.left = y + "px";}
+
+        }
+    </script>
+
+</html>
