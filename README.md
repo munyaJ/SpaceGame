@@ -1,3 +1,3 @@
 # SpaceGame
 
-`Use W, A, S,D to move planet`
+`Use W, A, S, D to move planet`
