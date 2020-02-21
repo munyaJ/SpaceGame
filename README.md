@@ -1,7 +1,7 @@
 # SpaceGame
 
 ### Install
-> pub get
+> `pub get`
 
 ### Usage
 > Use W, A, S, D to move planet
